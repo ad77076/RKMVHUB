@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "996436135948",
+    "project_id": "rkmv-project",
+    "storage_bucket": "rkmv-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996436135948:android:004cafda1e5a8b65a91e29",
+        "android_client_info": {
+          "package_name": "com.example.rkmvimu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996436135948-ppsm5b3nd6m4lural3g4srh8kna940jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rkmvimu",
+            "certificate_hash": "7a4b1a1c7ba5d45c32f2b278c776db7063bdf594"
+          }
+        },
+        {
+          "client_id": "996436135948-7iq3diibls74cq054sa4km2qm6rugtro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmo7eJj2PfTH7iLLRTqFkjvNWs8sA1ccQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996436135948-7iq3diibls74cq054sa4km2qm6rugtro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

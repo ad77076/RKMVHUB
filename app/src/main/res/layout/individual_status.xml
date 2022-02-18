@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250sp"
+    android:orientation="vertical"
+    android:id="@+id/linear_status"
+    android:background="@drawable/gradient1">
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:focusable="false"
+        android:paddingTop="8sp"
+        android:id="@+id/status_by"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:text="From"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:paddingLeft="40sp"
+        android:layout_weight="0.25"
+        android:gravity="left"
+        android:textColor="#e0e0e0" />
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:focusable="false"
+        android:text="Date"
+        android:paddingLeft="40sp"
+        android:gravity="left"
+        android:id="@+id/upload_details"
+        android:textColor="#bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.14"/>
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="1.5"
+        android:focusable="false"
+        android:fontFamily="@font/google"
+        android:gravity="center"
+        android:scrollbars="horizontal"
+        android:text="Message..."
+        android:textColor="#9e9e9e"
+        android:textColorLink="#2196f3" />
+
+    <View
+        android:focusable="false"
+        android:background="#7e57c2"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.005"/>
+
+</LinearLayout>

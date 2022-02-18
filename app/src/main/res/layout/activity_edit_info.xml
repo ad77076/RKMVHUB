@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInfoActivity"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.25">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="backPressed"
+            android:id="@+id/back"
+            android:layout_width="0sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="4sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:text=" Edit Information"
+            android:fontFamily="@font/google"
+            android:textAlignment="center"
+            android:paddingRight="30sp"
+            android:textColor="#7f36cb"
+            android:textSize="40sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:layout_marginLeft="60sp"
+        android:text="New name:"
+        android:textColor="#e0e0e0"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"/>
+    <EditText
+        android:id="@+id/new_name"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="20sp"
+        android:textColor="#fafafa"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:background="@drawable/round_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+    <TextView
+        android:fontFamily="@font/google"
+        android:layout_marginLeft="60sp"
+        android:text="New email:"
+        android:gravity="left"
+        android:textColor="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"/>
+
+    <EditText
+        android:id="@+id/new_email"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_edit_text"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="20sp"
+        android:textColor="#fafafa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:layout_marginLeft="60sp"
+        android:text="New department:"
+        android:gravity="left"
+        android:textColor="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"/>
+
+    <EditText
+        android:id="@+id/new_dept"
+        android:fontFamily="@font/ubuntu"
+        android:paddingLeft="20sp"
+        android:textColor="#fafafa"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_edit_text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:layout_marginLeft="60sp"
+        android:text="New role:"
+        android:gravity="left"
+        android:textColor="#e0e0e0"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"/>
+
+    <EditText
+        android:paddingBottom="15sp"
+        android:gravity="bottom"
+        android:id="@+id/new_role"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_weight="0.3"
+        android:background="@drawable/round_edit_text"
+        android:paddingLeft="20sp"
+        android:textColor="#fafafa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <TextView
+        android:fontFamily="@font/google"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="** Leave the boxes empty if you don't want to change that information."
+        android:textColor="#ffeb3b" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"/>
+
+    <Button
+        android:onClick="saveCalled"
+        android:id="@+id/save"
+        android:layout_marginLeft="120sp"
+        android:layout_marginRight="120sp"
+        android:text="SAVE"
+        android:textColor="#fafafa"
+        android:fontFamily="@font/google"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.2"
+        android:background="@drawable/buttonview"/>
+
+    <TextView
+        android:textColor="#bdbdbd"
+        android:textSize="20sp"
+        android:paddingLeft="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="bottom"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"/>
+
+</LinearLayout>

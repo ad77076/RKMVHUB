@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:focusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/time"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.3"/>
+    <TextView
+        android:focusable="false"
+        android:id="@+id/message_to_display"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1.29" />
+</LinearLayout>

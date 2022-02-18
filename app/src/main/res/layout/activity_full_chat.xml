@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullChat"
+    android:background="#fafafa"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@drawable/gradient1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="back"
+            android:id="@+id/b1"
+            android:layout_width="0sp"
+            android:layout_weight="0.13"
+            android:paddingLeft="4sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="2sp"
+            android:onClick="back"
+            android:id="@+id/profile_image"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.23"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+<LinearLayout
+    android:layout_width="0sp"
+    android:layout_height="match_parent"
+    android:layout_weight="0.8"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/ubuntu"
+            android:gravity="bottom"
+            android:layout_marginLeft="10sp"
+            android:text=" Name "
+            android:textColor="#fafafa"
+            android:textSize="20sp" />
+    <TextView
+        android:id="@+id/dept"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.7"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="top"
+        android:layout_marginLeft="10sp"
+        android:text=" Department "
+        android:textColor="#bdbdbd"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <View
+            android:padding="5sp"
+            android:id="@+id/chat_online"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+    <View
+        android:id="@+id/online_offline"
+        android:layout_width="0sp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="top"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>
+        <ImageView
+            android:id="@+id/ic_call"
+            android:layout_width="0sp"
+            android:layout_weight="0.19"
+            android:paddingLeft="13sp"
+            android:paddingRight="19sp"
+            android:src="@drawable/ic_call"
+            android:layout_height="match_parent"/>
+        <!--View
+            android:id="@+id/mail"
+            android:layout_width="0sp"
+            android:layout_weight="0.19"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:src="@drawable/email1"
+            android:layout_height="match_parent"/-->
+
+    </LinearLayout>
+<!--RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="0sp"
+    android:layout_weight="2">
+
+    <ProgressBar
+        android:id="@+id/wait_load"
+        android:layout_marginTop="200sp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="15sp"
+        android:stackFromBottom="true" />
+</RelativeLayout-->
+    <LinearLayout
+        android:background="@drawable/gradient1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginTop="30sp"
+            android:id="@+id/text_subject"
+            android:gravity="bottom"
+            android:hint="Subject here..."
+            android:textColorHint="#616161"
+            android:textColor="#fafafa"
+            android:fontFamily="@font/ubuntu"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="23sp"
+            android:layout_marginLeft="50sp"
+            android:background="@drawable/round_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.3"
+            android:layout_marginRight="50sp"/>
+
+        <EditText
+            android:layout_marginTop="30sp"
+            android:id="@+id/text_message"
+            android:gravity="bottom"
+            android:hint="Message here..."
+            android:textColorHint="#616161"
+            android:textColor="#fafafa"
+            android:fontFamily="@font/ubuntu"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="23sp"
+            android:layout_marginLeft="50sp"
+            android:background="@drawable/round_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:layout_marginRight="50sp"/>
+        <Button
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/ubuntu"
+            android:id="@+id/send"
+            android:text="Send"
+            android:textSize="18sp"
+            android:textColor="#fafafa"
+            android:layout_marginLeft="130sp"
+            android:layout_marginRight="130sp"
+            android:background="@drawable/buttonview"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.2"
+            android:layout_marginBottom="30sp"/>
+
+    </LinearLayout>
+
+    <!--TextView
+        android:background="@drawable/gradient1"
+        android:textColor="#bdbdbd"
+        android:textSize="20sp"
+        android:paddingLeft="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="bottom"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"/-->
+
+</LinearLayout>

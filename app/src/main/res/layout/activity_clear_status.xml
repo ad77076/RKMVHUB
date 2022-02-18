@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClearStatus"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="backed"
+            android:id="@+id/b1"
+            android:layout_width="0sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="4sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/google"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text=" Detailed Status "
+            android:textAlignment="center"
+            android:textColor="#7e57c2"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.03"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.02"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/google"
+            android:paddingTop="4sp"
+            android:id="@+id/detail_from"
+            android:textSize="20sp"
+            android:text="From"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="0.08"
+            android:gravity="left"
+            android:textColor="#e0e0e0" />
+
+        <TextView
+            android:fontFamily="@font/google"
+            android:text="Date"
+            android:layout_marginLeft="20sp"
+            android:gravity="left"
+            android:id="@+id/detail_date"
+            android:textColor="#bdbdbd"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.07"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1.5">
+
+            <ProgressBar
+                android:visibility="invisible"
+                android:id="@+id/progress_back"
+                android:layout_marginTop="200sp"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <TextView
+            android:fontFamily="@font/google"
+            android:textIsSelectable="true"
+            android:autoLink="web"
+            android:textColorLink="#2196f3"
+            android:scrollbars="horizontal"
+            android:text="Message..."
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:gravity="center"
+            android:id="@+id/detail_status"
+            android:textColor="#9e9e9e"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+</ScrollView>
+        </RelativeLayout>
+
+        <View
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.0017"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="0.015"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.02"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="bottom"
+        android:paddingLeft="10sp"
+        android:paddingBottom="10sp"
+        android:textColor="#bdbdbd"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

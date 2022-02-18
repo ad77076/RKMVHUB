@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchUser"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="back"
+            android:id="@+id/b1"
+            android:layout_width="0sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="4sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/google"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text=" Search User "
+            android:textAlignment="center"
+            android:textColor="#7f36cb"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0sp"
+    android:layout_weight="0.13"
+    android:orientation="horizontal">
+    <EditText
+        android:textColor="#fafafa"
+        android:id="@+id/name_search"
+        android:hint="Enter name..."
+        android:textColorHint="#616161"
+        android:inputType="text"
+        android:fontFamily="@font/ubuntu"
+        android:padding="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="5sp"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_edit_text"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_marginRight="10sp"
+        android:id="@+id/search_for"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@drawable/buttonview"
+        android:fontFamily="@font/ubuntu"
+        android:text="SEARCH"
+        android:textSize="12sp"
+        android:textColor="#fafafa" />
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/userWait"
+            android:visibility="invisible"
+            android:layout_marginTop="60sp"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"/>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:textColor="#bdbdbd"
+        android:textSize="20sp"
+        android:paddingLeft="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="bottom"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"/>
+</LinearLayout>

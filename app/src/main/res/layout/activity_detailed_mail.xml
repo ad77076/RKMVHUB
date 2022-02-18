@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedMail"
+    android:background="@drawable/gradient1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:fontFamily="@font/google"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.14"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="back"
+            android:id="@+id/b1"
+            android:layout_width="0sp"
+            android:layout_weight="0.7"
+            android:paddingTop="12sp"
+            android:paddingBottom="12sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+
+        <!--ImageView
+            android:paddingTop="13.5sp"
+            android:paddingBottom="13.5sp"
+            android:src="@drawable/trash"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:paddingTop="13sp"
+            android:paddingBottom="13sp"
+            android:src="@drawable/unread"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:paddingTop="13.5sp"
+            android:paddingBottom="13.5sp"
+            android:src="@drawable/moreicon"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/-->
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Here is the subject of the mail."
+        android:layout_marginBottom="10sp"
+        android:fontFamily="@font/google"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textColor="#e0e0e0"
+        android:id="@+id/sub_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1.09"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:paddingLeft="10sp"
+            android:paddingTop="7sp"
+            android:focusable="false"
+            android:layout_marginLeft="2sp"
+            android:id="@+id/sender_image"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_marginTop="8sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:text="Sender's name"
+                android:fontFamily="@font/google"
+                android:gravity="left"
+                android:textSize="15sp"
+                android:textColor="#e0e0e0"
+                android:id="@+id/from_name"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.65"/>
+            <TextView
+                android:layout_marginLeft="7sp"
+                android:text="Mail time."
+                android:fontFamily="@font/ubuntu"
+                android:gravity="left"
+                android:textSize="13sp"
+                android:textColor="#bdbdbd"
+                android:id="@+id/time_sent"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:paddingTop="13sp"
+            android:paddingBottom="13sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:paddingTop="13.5sp"
+            android:paddingBottom="13.5sp"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.1"/>
+
+    <ScrollView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="12">
+
+        <TextView
+            android:scrollbars="horizontal"
+            android:textIsSelectable="true"
+            android:autoLink="web"
+            android:textColorLink="#2196f3"
+            android:text="Mail body lies here."
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:fontFamily="@font/google"
+            android:gravity="left"
+            android:textSize="17sp"
+            android:textColor="#e0e0e0"
+            android:id="@+id/mail_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="makeReply"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/google"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/new_button_view"
+            android:text="REPLY"
+            android:textColor="#e0e0e0"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:onClick="makeCall"
+            android:letterSpacing="0.1"
+            android:fontFamily="@font/google"
+            android:layout_marginEnd="5sp"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/new_button_view"
+            android:text="CALL"
+            android:textColor="#e0e0e0"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.2"/>
+
+</LinearLayout>

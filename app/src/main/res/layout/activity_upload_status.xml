@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadStatus"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="backs"
+            android:id="@+id/b1"
+            android:layout_width="0sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="4sp"
+            android:src="@drawable/back"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/google"
+            android:gravity="center"
+            android:paddingRight="30sp"
+            android:text=" Upload Status "
+            android:textAlignment="center"
+            android:textColor="#7f36cb"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20" />
+
+    <TextView
+        android:paddingLeft="60sp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.10"
+        android:fontFamily="@font/google"
+        android:paddingRight="30sp"
+        android:text=" Type status : "
+        android:textColor="#e0e0e0"
+        android:textSize="20sp" />
+
+    <EditText
+        android:gravity="bottom"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:paddingRight="10sp"
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_weight="1"
+        android:background="@drawable/round_edit_text"
+        android:fontFamily="@font/google"
+        android:hint="Write status here..."
+        android:paddingLeft="20sp"
+        android:textColor="#fafafa"
+        android:textColorHint="#bdbdbd" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"/>
+
+    <Button
+        android:fontFamily="@font/google"
+        android:onClick="uploadStatus"
+        android:id="@+id/upload"
+        android:layout_marginLeft="120sp"
+        android:layout_marginRight="120sp"
+        android:background="@drawable/buttonview"
+        android:text="UPLOAD"
+        android:textColor="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.17"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.30"/>
+<LinearLayout
+    android:layout_marginLeft="130sp"
+    android:layout_marginRight="130sp"
+    android:layout_width="match_parent"
+    android:layout_height="0sp"
+    android:layout_weight="0.25"
+    android:orientation="vertical">
+
+    <ImageView
+        android:paddingTop="13sp"
+        android:onClick="deleteStatus"
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0sp"
+        android:src="@drawable/deleteicon"/>
+
+    <TextView
+        android:onClick="deleteStatus"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.2"
+        android:fontFamily="@font/google"
+        android:text=" Delete status "
+        android:textColor="#fafafa"
+        android:textSize="15sp" />
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"/>
+
+</LinearLayout>

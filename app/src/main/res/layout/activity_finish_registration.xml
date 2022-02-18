@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishRegistration"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="0sp"
+            android:layout_weight="0.1"
+            android:paddingLeft="4sp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/ubuntu"
+            android:paddingRight="40sp"
+            android:text=" Register "
+            android:textAlignment="center"
+            android:textColor="#7f36cb"
+            android:textSize="50sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Enter the OTP sent to your phone."
+        android:fontFamily="@font/ubuntu"
+        android:textAlignment="center"
+        android:textColor="#fafafa"
+        android:textSize="30sp"
+        android:layout_weight="0.35"/>
+
+    <EditText
+        android:textColor="#fafafa"
+        android:textColorHint="#e0e0e0"
+        android:id="@+id/otp"
+        android:hint="OTP here..."
+        android:inputType="number"
+        android:fontFamily="@font/ubuntu"
+        android:padding="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/round_edit_text"
+        android:layout_weight="0.26"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="0.25">
+
+        <ProgressBar
+            android:id="@+id/wait"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"/>
+
+    <TextView
+        android:id="@+id/text_wait"
+        android:textColor="#7f36cb"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:text="Please wait for at least 1 minute for the OTP to reach your device,if it dosen't click on Resend OTP."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+    <Button
+        android:onClick="finishRegistration"
+        android:id="@+id/nxt"
+        android:text="FINISH"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="#fafafa"
+        android:textStyle="bold"
+        android:layout_marginLeft="90sp"
+        android:layout_marginRight="90sp"
+        android:background="@drawable/buttonview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <TextView
+        android:layout_marginLeft="130sp"
+        android:layout_marginRight="130sp"
+        android:textStyle="bold"
+        android:onClick="resendOTP"
+        android:text="Resend OTP."
+        android:textColor="#fafafa"
+        android:fontFamily="@font/ubuntu"
+        android:gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <TextView
+        android:textSize="20sp"
+        android:paddingLeft="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="bottom"
+        android:fontFamily="@font/ubuntu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"/>
+
+
+</LinearLayout>
